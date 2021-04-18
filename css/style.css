@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100;300;400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background: url(../images/raimond-klavins-KNtHZY6US5Y-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 50%;
+  z-index: -1;
+}
+
+nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 28px;
+    align-items: center;
+    text-transform: uppercase;
+    line-height: 60px;
+}
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin: 0 15px;
+                }
+
+li:last-child {
+    margin-right: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+a::after {
+    position: absolute;
+    content: "";
+    background: #000;
+    height: 2px;
+    width: 0;
+    top: 21px;
+    left: 0;
+    transition: .3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+/* middle section */
+.middle {
+  position: absolute;
+  top: 44%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+  
+}
+
+h1 {
+  /* display: block; */
+  font-size: 115px;
+  font-weight: 700;
+  /* display: inline-block; */
+  position: relative;
+  margin-bottom: 6px;
+}
+
+h1::before {
+    content: "";
+    position: absolute;
+    width: 2px;
+    height: 150px;
+    background: #000;
+    top: 50%;
+    left: -47px;
+  }
+
+  
+
+p {
+  width: 50%;
+  line-height: 1.9;
+}
+
+    .bottom_section {
+        background: rgba(2, 148, 168, .7);
+        width: 62%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        justify-content: space-around;
+        padding: 33px 0px;
+    }
+
+    .author , .profession{
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6;
+    }
+    
+    span.title {
+        font-weight: 300;
+        color: #545151;
+        font-size: 15px;
+        text-transform: uppercase;
+    }
+
+    span.name {
+        text-transform: capitalize;
+    }
+    
+    span.department {
+        text-transform: capitalize;
+    }
+
+    /* .profession {
+        display: flex;
+        flex-direction: column;
+        line-height: 1.6;
+    } */
+
+    .arrow {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        
+    }
+    i.fas.fa-arrow-right{
+        transition: .3s;
+        display: block;
+    }
+
+    i.fas.fa-arrow-right:hover {
+        background: #002535;
+        padding: 12px;
+        border-radius: 50%;
+        width: 100%;
+       
+    }
